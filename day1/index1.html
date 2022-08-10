@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitri Sri Rahayu</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--<div class="h-screen w-full flex justify-center items-center flex-col" id="app">
+        <img id="gambar"> 
+        <h1>Data Kegiatan Saya</h1>
+        <ul 
+        class="flex flex-col gap-y-1"
+        v-for="(kegiatan, index) in dataKegiatan"
+        :key="index">
+        
+        <li @click="getDataKegiatan(kegiatan)"
+        class="bg-blue-300 rounded-lg p-2">
+            {{getDatakegiatan}}
+            <span class="font-bold text-green-400"></span>
+            <span class="text-red-900 font-bold cursor-pointer">x</span></li>
+        </ul>
+        <input 
+        v-model = "kegiatan"
+        class="border-[1px] w-[40rem] border-2 rounded-full hover:drop-shadow-md hover:border-white
+        focus-within:drop-shadow-md apparance none focus:outline-none px-3" 
+        type="text" 
+        id="input" 
+        placeholder="Masukan Kegiatan Anda"
+        />
+        <button @click="tambahKegiatan()" id="btn-2" class="bg-gray-100 rounded-full p-4">Tambah Kegiatan</button>
+    -->
+    <div class="h-screen w-full flex justify-center items-center flex-col" id="app">
+        <!--<h1 class="text-4xl textblck-900 font-bold">Data Covid Terkena</h1>
+        <span>Orang Sembuh : {{orangSembuh}}</span>
+        <span>Orang Meninggal : {{orangMeninggal}}</span>
+        <span>Orang Dirawat : {{orangDirawat}}</span> -->
+        <img :src="imageUser" alt="">
+        <h1>{{nameUser}} {{lastUser}}</h1>
+        
+        <button @click="generateUser()">Generate User</button>
+
+    </div>
+    <script src="./index1.js"></script>
+</body>
+</html>
